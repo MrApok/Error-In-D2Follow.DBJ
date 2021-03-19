@@ -1,0 +1,44 @@
+So, this is my first ever Github posting... But I have been having SUCHHHH a hard time trying to understand this, and as far as I'm concerned...
+There is no (known) fix, because of all the hours I have spent searching for answers online I haven't found anything even closely related.
+
+I would LOVE and deeply appreciate any assistance on this matter...
+My Issue is that every tiome I try to add a second line of command for a seperate round of "followers" to follow a "leader" ALL of my bots set with the D2BotFollow entry script
+IMMEDIATELY crash non-stop.
+
+Here is what my D2Follow.DBJ looks like;   (It's pretty simple for anybody that has ever setup a KOLBOT, so I didnt insert a pastebin, also I dont know how to >_>)
+
+/* Join game settings
+	Format: "leader's profile": ["leecher 1 profile", "leecher 2 profile", ...]
+	If you want everyone to join the same leader, use "leader's profile": ["all"]
+	NOTE: Use PROFILE names (profile matches window title), NOT character/account names
+	leader:leecher groups need to be divided by a comma
+	example:
+		var JoinSettings = {
+			"lead1": ["follow1", "follow2"],
+			"lead2": ["follow3", "follow4"]
+		};
+*/
+
+var JoinSettings = {
+	"MF1": ["MF2", "MF3", "MF4", "MF5", "MF6", "MF7"]    // <<<<<<<<<< HERE you can see my "Leader": ["Follower1", "Follower2"] etc.
+  		};                                                       So if I try to change it to look like this....
+*/
+                                                     
+var JoinSettings = {
+	"MF1": ["MF2", "MF3", "MF4", "MF5", "MF6", "MF7"]
+  "Pala": ["Ele", "Lite", "Fire", "Bone", "Barb"]
+  		};
+*/
+I'm no noob at this, but I'm also no pro, Im pretty positive I have my Sytax Correct here...
+So why would my bots just start crashing uncontrollably... I just end up seeing this...
+
+16:55:04 (MF7) Window has unexpectedly exited... starting profile
+16:55:05 (MF7) Window has unexpectedly exited... starting profile
+16:55:06 (MF7) Window has unexpectedly exited... starting profile
+16:55:07 (MF7) Window has unexpectedly exited... starting profile
+16:55:08 (MF7) Window has unexpectedly exited... starting profile
+
+I appologize for any poor layout or execution of order in my repo.
+I am extremely grateful for any help on this situation, It will save me so much headache!
+
+Peace be with you all! <3
